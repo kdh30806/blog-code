@@ -24,8 +24,8 @@ public class Main {
 
 			bw.write(A+B + "\n");
 		}
+		
 		br.close();
-
 		bw.flush();
 		bw.close();
 
