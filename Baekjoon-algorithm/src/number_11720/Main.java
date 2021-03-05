@@ -13,15 +13,15 @@ public class Main {
 		BufferedReader br = new  BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		int count = Integer.parseInt(br.readLine());
-		String str_num = br.readLine();
-		char[] char_num = str_num.toCharArray();
+		int count = Integer.parseInt(br.readLine()); // 숫자의 갯수
+		String str_num = br.readLine(); // 숫자를 문자열로 입력 받기
+		char[] char_num = str_num.toCharArray(); // 숫자를 char[]에 저장
 		
 		int num = 0;
 		int sum = 0;
 		
 		for(int i = 0 ; i < count ; i++) {
-			num = Integer.parseInt(""+char_num[i]);
+			num = Integer.parseInt(""+char_num[i]); // char를 String으로 변환 시킨후 parseInt
 			sum += num;
 		}
 		
